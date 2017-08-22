@@ -1,0 +1,211 @@
+body {
+  margin: auto 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f4f4f4;
+  background-image: url('../images/wormz.png');
+  font-family: arial, 'helvetica neue', helvetica, sans-serif;
+  text-align: justify;
+  line-height: 1.2;
+  color: #777777;
+}
+
+                /*~~~ Global-ish Elements ~~~ */
+
+                /* HEADER & NAVIGATION SECTION */
+
+h1, h2 {
+  font-family: georgia, times, 'times new roman', serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+header {
+  background-color: #ffffff;
+  color: #ffffff;
+  border: #cccccc;
+}
+header a {
+  color: #777777;
+  text-decoration: none;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+}
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+header #logo h1 {
+  float: left;
+  margin: 0;
+  padding: 15px;
+}
+header nav {
+  float: right;
+  margin-top: 20px;
+}
+h1 .highlight {
+  background-color: #4aaaa5;
+  padding:30px 30px 30px 30px; 
+}
+header a:hover {
+  color: #4aaaa5;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  padding: 20px;
+  font-size: 10px;
+  color: #777777;
+  background-color: #666666;
+  border-top: 5px solid #4aaaa5;
+  text-align: center;
+  position: fixed;
+  bottom:0;
+  width: 100%;
+}
+
+                            /* CONNECT SECTION */
+
+                            
+#connect h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #4aaaa5;
+}
+
+ #connect p {
+  clear: both;
+  display: inline;
+  text-align: justify;
+  font-size: 14.5px;
+}
+
+#connect {
+  height: 100%;
+  max-width: 270px;
+  border: 1px solid #ccc;
+}
+
+#connect{
+  float: right;
+  width: 100%;
+  padding: 10px;
+}
+
+aside #connect a {
+  color: #777777;
+  text-decoration: none;
+}
+aside #connect ul {
+  margin: 0;
+  padding: 0;
+}
+aside #connect li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+              
+            /*~~~ END !!!! Global-ish Elements ~~~ */
+
+
+                    /* PORTFOLIO SECTION */
+
+#portfolio {
+  height: 100%;
+  max-width: 650px;
+  border: 1px solid #ccc;
+}
+
+#portfolio{
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+#portfolio p {
+  clear: both;
+  display: inline;
+  text-align: justify;
+  font-size: 14.5px;
+}
+#portfolio h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #4aaaa5;
+}
+
+
+
+                      /* CONTACT SECTION */
+
+
+
+#contact {
+  height: 100%;
+  max-width: 650px;
+  border: 1px solid #ccc;
+}
+#contact{
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+#contact p {
+  clear: both;
+  display: inline;
+  text-align: justify;
+  font-size: 14.5px;
+}
+#contact h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #4aaaa5;
+}
+
+                        /* ABOUT SECTION */
+
+
+#container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+#about {
+  height: 100%;
+  max-width: 650px;
+  border: 1px solid #ccc;
+}
+#about{
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+#headshot {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 2px 15px 0px 0px;
+}
+#about p {
+  clear: both;
+  display: inline;
+  text-align: justify;
+  font-size: 14.5px;
+}
+#about h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #4aaaa5;
+}
+

@@ -3,7 +3,7 @@ change the following css code:
 
 1. Remove border-radius:25px to remove round borders.
 2. Change font for headings to:; Georgia, Times, 'Times New Roman' Serif;
-4. Change color used for headings and backgrounds from '#94BEC2' to `#4AAAA5`
+4. Change color used for headings and backgrounds from '#DAF7A6' or #94BEC2' to `#4AAAA5` (<< teal listed in HW instructions)
 5. Change font color (for all text except the headings) to `#777777`
 6. Change main header background color to `#ffffff` and main header border color to `#cccccc`
 7. Change footer background color to `#666666`
@@ -15,7 +15,7 @@ margin : auto 0;
 padding : 0;
 height : auto;
 background-color : #eee;
-background-image : url('../images/stardust.png');
+background-image : url('../images/topography.png');
 font-family : arial, 'helvetica neue', helvetica, sans-serif;
 text-align : justify;
 color : #777777;
@@ -39,9 +39,9 @@ margin : auto;
 overflow : auto;
 }
 header {
-background-color : #eee;
-color : #eee;
-border: #777777;
+background-color : #ffffff;
+color : #ffffff;
+border: #cccccc;
 }
 #logo h1 {
 float : left;
@@ -53,7 +53,7 @@ h1 .highlight {
 background-color : #94BEC2;
 padding : 30px 30px 30px 30px;
 border-radius :25px;
-border : #eee solid 1px;
+border : #94BEC2 solid 1px;
 padding : 20px;
 }
 header nav {
@@ -74,7 +74,7 @@ color : #777777;
 text-decoration : none;
 }
 header a:hover {
-color : #94BEC2;
+color : #DAF7A6;
 }
 
 /* FOOTER */
@@ -83,7 +83,7 @@ footer {
 padding : 20px;
 font-size : 10px;
 color : #777777;
-background-color : #eee;
+background-color : #ffffff;
 border-top : 5px solid #94BEC2;
 text-align : center;
 position : fixed;
@@ -100,7 +100,7 @@ margin : 60px auto;
 overflow : auto;
 }
 section {
-background-color : #eee;
+background-color : #ffffff;
 border : #cccccc;
 max-width : 650px;
 padding : 30px;
@@ -110,7 +110,7 @@ border-radius : 25px;
 /* CONNECT SIDEBAR (aside; 270px wide) */
 
 aside {
-background-color : #eee;
+background-color : #ffffff;
 border : #cccccc;
 margin : auto 0;
 max-width : 270px;
@@ -184,7 +184,7 @@ margin : 10px 20px 10px 20px;
 }
 input[type="submit"] {
 background-color : #94BEC2;
-color : white;
+color : #eee;
 padding : 12px 20px;
 border : none;
 border-radius : 4px;
@@ -195,7 +195,7 @@ input[type="submit"]:hover {
 background-color : #94BEC2;
 }
 .contform {
-background-color : #eee;
+background-color : #ffffff;
 max-width : 650px;
 }
 
@@ -304,14 +304,14 @@ border-radius :25px;
 }
 .desc {
 background : #94BEC2;
-color : #eee;
+color : #ffffff;
 position : absolute;
 bottom : 20px;
 left : 0;
 right : 0;
 text-align : center;
 padding : 15px;
-border-radius :25px; 
+border-radius :10px; 
 font-weight: bold;
 }
 .desc p {
@@ -319,7 +319,7 @@ font-size : 1em;
 }
 .wrap {
 width : 95%;
-background-color : #eee;
+background-color : #ffffff;
 }
 
 

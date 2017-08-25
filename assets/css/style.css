@@ -1,3 +1,15 @@
+/*To style basic-portfolio with spec delineated in homework assignment, 
+change the following css code:
+
+1. Remove border-radius:25px to remove round borders.
+2. Change font for headings to:; Georgia, Times, 'Times New Roman' Serif;
+4. Change color used for headings and backgrounds from '#94BEC2' to `#4AAAA5`
+5. Change font color (for all text except the headings) to `#777777`
+6. Change main header background color to `#ffffff` and main header border color to `#cccccc`
+7. Change footer background color to `#666666`
+8. Change main content background color to `#ffffff` and main content border color to `#dddddd`
+*/
+
 html body {
 margin : auto 0;
 padding : 0;
@@ -18,6 +30,9 @@ h2, h3 {
 font-family : 'helvetica neue', Times, 'Times New Roman', Serif;
 font-size : 1.4em;
 }
+
+/* HEADER - LOGO - NAV */
+
 .container {
 width : 960px;
 margin : auto;
@@ -61,6 +76,9 @@ text-decoration : none;
 header a:hover {
 color : #94BEC2;
 }
+
+/* FOOTER */
+
 footer {
 padding : 20px;
 font-size : 10px;
@@ -72,6 +90,9 @@ position : fixed;
 bottom : 0;
 width : 100%;
 }
+
+/* MAIN BOX (content; 650px wide)*/
+
 .main {
 width : 960px;
 height : 100%;
@@ -85,6 +106,9 @@ max-width : 650px;
 padding : 30px;
 border-radius : 25px;
 }
+
+/* CONNECT SIDEBAR (aside; 270px wide) */
+
 aside {
 background-color : #eee;
 border : #cccccc;
@@ -124,6 +148,9 @@ height : 50px;
 margin : auto;
 padding : 5px 10px 5px 10px;
 }
+
+/* CONTACT (contact.html) */
+
 #contact {
 height : 100%;
 max-width : 650px;
@@ -171,6 +198,9 @@ background-color : #94BEC2;
 background-color : #eee;
 max-width : 650px;
 }
+
+/* HOME (index.html) */
+
 #about {
 height : 100%;
 max-width : 650px;
@@ -203,6 +233,9 @@ color : #94BEC2;
 font-weight : bold;
 padding : 10px 0 0 10px;
 }
+
+/* PORTFOLIO (portfolio.html) */
+
 #portfolio {
 height : 100%;
 max-width : 650px;
@@ -214,13 +247,6 @@ width : 100%;
 margin : 5px;
 padding : 5px;
 }
-/*.p-box h2 {
-color : #94BEC2;
-margin: auto;
-padding : 15px 20px 10px 20px;
-font-weight : bold;
-}*/
-
 #portfolio h2 {
 margin-top : 10px;
 margin-bottom : 10px;
@@ -228,7 +254,6 @@ color : #94BEC2;
 font-weight : bold;
 padding : 10px 0 0 20px;
 }
-
 .one {
 height : 175px;
 width : 225px;
@@ -268,18 +293,16 @@ content : "";
 display : block;
 clear : both;
 }
-div.box {
+.box {
 max-width : 225px;
 max-height : 200px;
 position : relative;
 margin : 20px 20px 0 60px;
 }
-
 .image {
 border-radius :25px;
 }
-
-div.desc {
+.desc {
 background : #94BEC2;
 color : #eee;
 position : absolute;
@@ -288,7 +311,7 @@ left : 0;
 right : 0;
 text-align : center;
 padding : 15px;
-border-radius :25px;
+border-radius :25px; 
 font-weight: bold;
 }
 .desc p {
@@ -298,363 +321,7 @@ font-size : 1em;
 width : 95%;
 background-color : #eee;
 }
-/*html body {
-  margin: auto 0;
-  padding: 0;
-  height: auto;
-  background-color: #eee;
-  background-image: url('../images/stardust.png');
-  font-family: arial, 'helvetica neue', helvetica, sans-serif;
-  text-align: justify;
-  color: #777777;
-  overflow: auto;
-}
 
-                /*~~~ Global-ish Elements ~~~ */
-
-                /* HEADER & NAVIGATION SECTION 
-
-h1 {
-  font-family: 'helvetica neue', Times, 'Times New Roman', Serif;
-  font-size: 2.1em;
-  font-weight: bold;
-
-}
-
-h2, h3 {
-  font-family: 'helvetica neue', Times, 'Times New Roman', Serif;
-  font-size: 1.4em;
-}
-.container {
-  width: 960px;
-  margin: auto;
-  overflow: auto;
-}
-header {
-  background-color: #eee;
-  color: #eee;
-  border: #777777;
-}
-
-#logo h1 {
-  float: left;
-  margin: auto;
-  padding-top: 15px;
-  padding-bottom: 20px;
-}
-
-h1 .highlight {
-  background-color: #94BEC2;
-  padding:30px 30px 30px 30px;
-  border-radius: 25px;
-  border: 1px solid #777777;
-  padding: 20px; 
-}
-
-header nav {
-  float: right;
-  margin-top: 30px;
-}
-
-header ul {
-  margin: 0;
-  padding: 0;
-}
-header li {
-  float: left;
-  display: inline;
-  padding: 0 20px 0 20px;
-}
-header a {
-  color: #777777;
-  text-decoration: none;
-}
-
-header a:hover {
-  color: #94BEC2;
-}
-
-/* FOOTER SECTION *
-
-footer {
-  padding: 20px;
-  font-size: 10px;
-  color: #777777;
-  background-color: #eee;
-  border-top: 5px solid #94BEC2;
-  text-align: center;
-  position: fixed;
-  bottom:0;
-  width: 100%;
-}
-
-                            /* MAIN SECTION & CONNECT SECTION *
-
-.main {
-  width: 960px;
-  height: 100%;
-  margin: auto;
-  overflow: auto;
-  margin-top: 60px;
-}
-  section {
-  background-color: #eee;
-  border: #cccccc;
-  max-width: 650px;
-  padding: 30px;
-  border-radius: 25px;
-}
-
-aside {
-  background-color: #eee;
-  border: #cccccc;
-  margin: auto 0;
-  max-width: 270px;
-  border-radius: 25px;
-  padding: 20px;
-}
-
-#connect {
-  float: right;
-  padding: 20px;
-}
-
-#connect h2 {
-  margin-bottom: 10px;
-  color: #94BEC2;
-  text-align: center;
-  font-weight: bold;
-}
-
-.sm-hub {
-  width: 100%;
-  text-align: center;
-}
-
-.sm-hub li {
-  float: left;
-  display: inline;
-  margin: auto;
-}
-
-.sm-icon a {
-  text-decoration: none;
-  margin: auto;
-  display: block;
-}
-
-.icon {
-  border: none;
-  width: 50px;
-  height: 50px;
-  margin: auto;
-  padding: 5px 10px 5px 10px;
-}
-
-
-
-
-
-
-              
-            /*~~~ END !!!! Global-ish Elements ~~~ */
-
-
-                      /* CONTACT.HTML SECTION *
-
-
-
- #contact {
-  height: 100%;
-  max-width: 650px;
-}
- #contact{
-  float: left;
-  width: 100%;
-  padding: 10px;
-}
-
- #contact h2 {
-  margin-top: 10px;
-  color: #94BEC2;
-  font-weight: bold;
-  padding: 10px 0px 5px 10px;
-}
-
-#contact label {
-  margin-top: 20px;
-  color: #777;
-  padding: 20px 0px 0px 20px;
-  font-size: .9em;
-  font-weight: bold;
-}
-
-input[type=text], input[type=email], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin: 10px;
-  
-}
-
-input[type=submit] {
-    background-color: #94BEC2;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 10px;
-}
-
-input[type=submit]:hover {
-    background-color: #94BEC2;
-}
-
-.contform {
-    background-color: #eee;
-    max-width: 650px;
-}
-
-                        /* ABOUT or INDEX.HTML SECTION *
-
-
-
-
-#about {
-  height: 100%;
-  max-width: 650px;
-}
-#about{
-  float: left;
-  width: 100%;
-  padding: 10px;
-}
-#headshot {
-  float: left;
-  width: 200px;
-  height: 200px;
-  margin: auto;
-  padding:10px;
-  margin-top: 5px;
-}
-#about p {
-  clear: both;
-  display: inline;
-  text-align: justify;
-  line-height:.15em;
-  letter-spacing: .008em;
-  font-size: .96em;
-  margin: auto;
-}
-#about h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: #94BEC2;
-  font-weight: bold;
-  padding: 10px 0px 0px 10px;
-}
-
-
-
-                   /* PORTFOLIO.HTML SECTION *
-#portfolio {
-  height: 100%;
-  max-width: 650px;
-  overflow: inherit;
-}
-#portfolio{
-  float: left;
-  width: 100%;
-  margin: 5px;
-  padding: 5px;
-}
-#portfolio .p-box h2 {
-  color: #94BEC2;
-  padding: 20px 0px 0px 20px;
-  font-weight: bold;
-}
-
-.one {
-  height: 175px;
-  width: 225px;
-  clear:both;
-  float: left;
- }
-
-.two {
-  height: 175px;
-  width: 225px;
-  float:left;
-  display: inline;
-  }
-
-.three {
-  height: 175px;
-  width: 225px;
-  display: inline;
-  float: left;
- }
-
-.four {
-  height: 175px;
-  width: 225px;
-  display: inline;
-  float: left;
-     }
-
-.five {
-  height: 175px;
-  width: 225px;
-  display: inline;
-  clear:both;
-  float:left;
-  }
-
-.box:hover .image {
-  opacity: 0.3;
-}
-
-.clearfix:after {
-content: "";
-display: block;
-clear: both;
-}
-
-
-div.box {
-  max-width: 225px;
-  max-height: 200px;
-  position: relative;
-  margin: 20px 20px 0px 60px;
-  border: .5px solid black;
-}
-
-
-/*description box hovering over image*
-
-div.desc {
-  background: #94BEC2;
-  color: #eee;
-  position: absolute;
-  bottom: 20px;
-  left:0px;
-  right:0px;
-  text-align: center;
-  padding: 15px;
-}
-
-.desc p {
-font-family: georgia, times, 'times new roman', serif;
-font-size: 1em;
-}
-
-.wrap {
-width: 95%;
-background-color: #eee;
-}
 
 
 

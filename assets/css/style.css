@@ -44,8 +44,11 @@ header {
 }
 
 h1 .highlight {
-  background-color: #B8A7AE;
-  padding:30px 30px 30px 30px; 
+  background-color: #94BEC2;
+  padding:30px 30px 30px 30px;
+  border-radius: 25px;
+  border: 1px solid #94BEC2;
+  padding: 20px; 
 }
 
 header nav {
@@ -68,7 +71,7 @@ header a {
 }
 
 header a:hover {
-  color: #B8A7AE;
+  color: #94BEC2;
 }
 
 /* FOOTER SECTION */
@@ -78,7 +81,7 @@ footer {
   font-size: 10px;
   color: #777777;
   background-color: #eee;
-  border-top: 5px solid #B8A7AE;
+  border-top: 5px solid #94BEC2;
   text-align: center;
   position: fixed;
   bottom:0;
@@ -91,15 +94,15 @@ footer {
   width: 960px;
   height: 100%;
   margin: auto;
-  overflow: hidden;
+  overflow: inherit;
   margin-top: 60px;
 }
   section {
   background-color: #eee;
   border: #cccccc;
   max-width: 650px;
-  padding: 20px;
-
+  padding: 30px;
+  border-radius: 25px;
 }
 
 aside {
@@ -107,6 +110,8 @@ aside {
   border: #cccccc;
   margin: auto 0;
   max-width: 270px;
+  border-radius: 25px;
+  padding: 20px;
 }
 
 #connect {
@@ -116,7 +121,7 @@ aside {
 
 #connect h2 {
   margin-bottom: 10px;
-  color: #B8A7AE;
+  color: #94BEC2;
   text-align: center;
   font-weight: bold;
 }
@@ -169,18 +174,19 @@ aside {
   padding: 10px;
 }
 
- #contact p {
-  clear: both;
-  display: inline;
-  text-align: justify;
-  padding: 20px;
-}
  #contact h2 {
   margin-top: 10px;
-  margin-bottom: 10px;
-  color: #B8A7AE;
+  color: #94BEC2;
   font-weight: bold;
-  padding: 10px 0px 0px 10px;
+  padding: 10px 0px 5px 10px;
+}
+
+#contact label {
+  margin-top: 20px;
+  color: #777;
+  padding: 20px 0px 0px 20px;
+  font-size: .9em;
+  font-weight: bold;
 }
 
 input[type=text], input[type=email], select, textarea {
@@ -189,22 +195,22 @@ input[type=text], input[type=email], select, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin: 10px;
   
 }
 
 input[type=submit] {
-    background-color: #B8A7AE;
+    background-color: #94BEC2;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin: 10px;
 }
 
 input[type=submit]:hover {
-    background-color: #B8A7AE;
+    background-color: #94BEC2;
 }
 
 .contform {
@@ -231,22 +237,23 @@ input[type=submit]:hover {
   width: 200px;
   height: 200px;
   margin: auto;
-  padding:20px;
+  padding:10px;
+  margin-top: 5px;
 }
 #about p {
   clear: both;
   display: inline;
   text-align: justify;
-  line-height:1.5px;
+  line-height:.15em;
   letter-spacing: .008em;
-  font-size: 1em;
+  font-size: .96em;
   margin: auto;
   padding:auto;
 }
 #about h2 {
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #B8A7AE;
+  color: #94BEC2;
   font-weight: bold;
   padding: 10px 0px 0px 10px;
 }
@@ -257,7 +264,7 @@ input[type=submit]:hover {
 #portfolio {
   height: 100%;
   max-width: 650px;
-  overflow: auto;
+  overflow: inherit;
 }
 #portfolio{
   float: left;
@@ -268,7 +275,7 @@ input[type=submit]:hover {
 #portfolio h2 {
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #B8A7AE;
+  color: #94BEC2;
   padding: 10px 0px 0px 10px;
   font-weight: bold;
 }
@@ -332,7 +339,7 @@ div.box {
 /*description box hovering over image*/
 
 div.desc {
-  background: #B8A7AE;
+  background: #94BEC2;
   color: #eee;
   position: absolute;
   bottom: 20px;

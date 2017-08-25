@@ -1,6 +1,7 @@
 body {
   margin: auto 0;
   padding: 0;
+  height: auto;
   background-color: #eee;
   background-image: url('../images/stardust.png');
   font-family: arial, 'helvetica neue', helvetica, sans-serif;

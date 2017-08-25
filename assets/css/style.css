@@ -1,4 +1,304 @@
-body {
+html body {
+margin : auto 0;
+padding : 0;
+height : auto;
+background-color : #eee;
+background-image : url('../images/stardust.png');
+font-family : arial, 'helvetica neue', helvetica, sans-serif;
+text-align : justify;
+color : #777777;
+overflow : auto;
+}
+h1 {
+font-family : 'helvetica neue', Times, 'Times New Roman', Serif;
+font-size : 2.1em;
+font-weight : bold;
+}
+h2, h3 {
+font-family : 'helvetica neue', Times, 'Times New Roman', Serif;
+font-size : 1.4em;
+}
+.container {
+width : 960px;
+margin : auto;
+overflow : auto;
+}
+header {
+background-color : #eee;
+color : #eee;
+border: #777777;
+}
+#logo h1 {
+float : left;
+margin : auto;
+padding-top : 15px;
+padding-bottom : 20px;
+}
+h1 .highlight {
+background-color : #94BEC2;
+padding : 30px 30px 30px 30px;
+border-radius :25px;
+border : #eee solid 1px;
+padding : 20px;
+}
+header nav {
+float : right;
+margin-top : 30px;
+}
+header ul {
+margin : 0;
+padding : 0;
+}
+header li {
+float : left;
+display : inline;
+padding : 0 20px 0 20px;
+}
+header a {
+color : #777777;
+text-decoration : none;
+}
+header a:hover {
+color : #94BEC2;
+}
+footer {
+padding : 20px;
+font-size : 10px;
+color : #777777;
+background-color : #eee;
+border-top : 5px solid #94BEC2;
+text-align : center;
+position : fixed;
+bottom : 0;
+width : 100%;
+}
+.main {
+width : 960px;
+height : 100%;
+margin : 60px auto;
+overflow : auto;
+}
+section {
+background-color : #eee;
+border : #cccccc;
+max-width : 650px;
+padding : 30px;
+border-radius : 25px;
+}
+aside {
+background-color : #eee;
+border : #cccccc;
+margin : auto 0;
+max-width : 270px;
+border-radius : 25px;
+padding : 20px;
+}
+#connect {
+float : right;
+padding : 20px;
+}
+#connect h2 {
+margin-bottom : 10px;
+color : #94BEC2;
+text-align : center;
+font-weight : bold;
+}
+.sm-hub {
+width : 100%;
+text-align : center;
+}
+.sm-hub li {
+float : left;
+display : inline;
+margin : auto;
+}
+.sm-icon a {
+text-decoration : none;
+margin : auto;
+display : block;
+}
+.icon {
+border : none;
+width : 50px;
+height : 50px;
+margin : auto;
+padding : 5px 10px 5px 10px;
+}
+#contact {
+height : 100%;
+max-width : 650px;
+}
+#contact {
+float : left;
+width : 100%;
+padding : 10px;
+}
+#contact h2 {
+margin-top : 10px;
+color : #94BEC2;
+font-weight : bold;
+padding : 10px 0 5px 15px;
+}
+#contact label {
+margin-top : 20px;
+color : #777;
+padding : 20px 0 0 20px;
+font-size : 0.9em;
+font-weight : bold;
+}
+input[type="text"], input[type="email"], select, textarea {
+width : 93%;
+padding : 12px;
+display: block;
+border : #ccc solid 1px;
+border-radius : 4px;
+box-sizing : border-box;
+margin : 10px 20px 10px 20px;
+}
+input[type="submit"] {
+background-color : #94BEC2;
+color : white;
+padding : 12px 20px;
+border : none;
+border-radius : 4px;
+cursor : pointer;
+margin : 10px;
+}
+input[type="submit"]:hover {
+background-color : #94BEC2;
+}
+.contform {
+background-color : #eee;
+max-width : 650px;
+}
+#about {
+height : 100%;
+max-width : 650px;
+}
+#about {
+float : left;
+width : 100%;
+padding : 10px;
+}
+#headshot {
+float : left;
+width : 200px;
+height : 200px;
+margin : 5px auto;
+padding : 10px;
+}
+#about p {
+clear : both;
+display : inline;
+text-align : justify;
+line-height : 0.15em;
+letter-spacing : 0.008em;
+font-size : 0.96em;
+margin : auto;
+}
+#about h2 {
+margin-top : 10px;
+margin-bottom : 10px;
+color : #94BEC2;
+font-weight : bold;
+padding : 10px 0 0 10px;
+}
+#portfolio {
+height : 100%;
+max-width : 650px;
+overflow : inherit;
+}
+#portfolio {
+float : left;
+width : 100%;
+margin : 5px;
+padding : 5px;
+}
+/*.p-box h2 {
+color : #94BEC2;
+margin: auto;
+padding : 15px 20px 10px 20px;
+font-weight : bold;
+}*/
+
+#portfolio h2 {
+margin-top : 10px;
+margin-bottom : 10px;
+color : #94BEC2;
+font-weight : bold;
+padding : 10px 0 0 20px;
+}
+
+.one {
+height : 175px;
+width : 225px;
+clear : both;
+float : left;
+}
+.two {
+height : 175px;
+width : 225px;
+float : left;
+display : inline;
+}
+.three {
+height : 175px;
+width : 225px;
+display : inline;
+float : left;
+}
+.four {
+height : 175px;
+width : 225px;
+display : inline;
+float : left;
+}
+.five {
+height : 175px;
+width : 225px;
+display : inline;
+clear : both;
+float : left;
+}
+.box:hover .image {
+opacity : 0.300000011920928955078125;
+}
+.clearfix:after {
+content : "";
+display : block;
+clear : both;
+}
+div.box {
+max-width : 225px;
+max-height : 200px;
+position : relative;
+margin : 20px 20px 0 60px;
+}
+
+.image {
+border-radius :25px;
+}
+
+div.desc {
+background : #94BEC2;
+color : #eee;
+position : absolute;
+bottom : 20px;
+left : 0;
+right : 0;
+text-align : center;
+padding : 15px;
+border-radius :25px;
+font-weight: bold;
+}
+.desc p {
+font-size : 1em;
+}
+.wrap {
+width : 95%;
+background-color : #eee;
+}
+/*html body {
   margin: auto 0;
   padding: 0;
   height: auto;
@@ -12,7 +312,7 @@ body {
 
                 /*~~~ Global-ish Elements ~~~ */
 
-                /* HEADER & NAVIGATION SECTION */
+                /* HEADER & NAVIGATION SECTION 
 
 h1 {
   font-family: 'helvetica neue', Times, 'Times New Roman', Serif;
@@ -28,12 +328,12 @@ h2, h3 {
 .container {
   width: 960px;
   margin: auto;
-  overflow: hidden;
+  overflow: auto;
 }
 header {
   background-color: #eee;
   color: #eee;
-  border: #eee;
+  border: #777777;
 }
 
 #logo h1 {
@@ -47,7 +347,7 @@ h1 .highlight {
   background-color: #94BEC2;
   padding:30px 30px 30px 30px;
   border-radius: 25px;
-  border: 1px solid #94BEC2;
+  border: 1px solid #777777;
   padding: 20px; 
 }
 
@@ -74,7 +374,7 @@ header a:hover {
   color: #94BEC2;
 }
 
-/* FOOTER SECTION */
+/* FOOTER SECTION *
 
 footer {
   padding: 20px;
@@ -88,13 +388,13 @@ footer {
   width: 100%;
 }
 
-                            /* MAIN SECTION & CONNECT SECTION */
+                            /* MAIN SECTION & CONNECT SECTION *
 
 .main {
   width: 960px;
   height: 100%;
   margin: auto;
-  overflow: inherit;
+  overflow: auto;
   margin-top: 60px;
 }
   section {
@@ -143,7 +443,7 @@ aside {
   display: block;
 }
 
-#icon {
+.icon {
   border: none;
   width: 50px;
   height: 50px;
@@ -160,7 +460,7 @@ aside {
             /*~~~ END !!!! Global-ish Elements ~~~ */
 
 
-                      /* CONTACT.HTML SECTION */
+                      /* CONTACT.HTML SECTION *
 
 
 
@@ -218,7 +518,7 @@ input[type=submit]:hover {
     max-width: 650px;
 }
 
-                        /* ABOUT or INDEX.HTML SECTION */
+                        /* ABOUT or INDEX.HTML SECTION *
 
 
 
@@ -248,7 +548,6 @@ input[type=submit]:hover {
   letter-spacing: .008em;
   font-size: .96em;
   margin: auto;
-  padding:auto;
 }
 #about h2 {
   margin-top: 10px;
@@ -260,7 +559,7 @@ input[type=submit]:hover {
 
 
 
-                   /* PORTFOLIO.HTML SECTION */
+                   /* PORTFOLIO.HTML SECTION *
 #portfolio {
   height: 100%;
   max-width: 650px;
@@ -272,7 +571,7 @@ input[type=submit]:hover {
   margin: 5px;
   padding: 5px;
 }
-#portfolio h2 {
+#portfolio .p-box h2 {
   color: #94BEC2;
   padding: 20px 0px 0px 20px;
   font-weight: bold;
@@ -334,7 +633,7 @@ div.box {
 }
 
 
-/*description box hovering over image*/
+/*description box hovering over image*
 
 div.desc {
   background: #94BEC2;

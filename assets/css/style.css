@@ -1,36 +1,57 @@
 body {
   margin: auto 0;
   padding: 0;
-  height: 100%;
-  background-color: #f4f4f4;
-  background-image: url('../images/wormz.png');
+  background-color: #eee;
+  background-image: url('../images/stardust.png');
   font-family: arial, 'helvetica neue', helvetica, sans-serif;
   text-align: justify;
-  line-height: 1.2;
   color: #777777;
+  overflow: auto;
 }
 
                 /*~~~ Global-ish Elements ~~~ */
 
                 /* HEADER & NAVIGATION SECTION */
 
-h1, h2 {
-  font-family: georgia, times, 'times new roman', serif;
+h1 {
+  font-family: 'helvetica neue', Times, 'Times New Roman', Serif;
+  font-size: 2.1em;
+  font-weight: bold;
+
+}
+
+h2, h3 {
+  font-family: 'helvetica neue', Times, 'Times New Roman', Serif;
+  font-size: 1.4em;
 }
 .container {
-  width: 80%;
+  width: 960px;
   margin: auto;
   overflow: hidden;
 }
 header {
-  background-color: #ffffff;
-  color: #ffffff;
-  border: #cccccc;
+  background-color: #eee;
+  color: #eee;
+  border: #eee;
 }
-header a {
-  color: #777777;
-  text-decoration: none;
+
+#logo h1 {
+  float: left;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
+
+h1 .highlight {
+  background-color: #B8A7AE;
+  padding:30px 30px 30px 30px; 
+}
+
+header nav {
+  float: right;
+  margin-top: 30px;
+}
+
 header ul {
   margin: 0;
   padding: 0;
@@ -40,21 +61,13 @@ header li {
   display: inline;
   padding: 0 20px 0 20px;
 }
-header #logo h1 {
-  float: left;
-  margin: 0;
-  padding: 15px;
+header a {
+  color: #777777;
+  text-decoration: none;
 }
-header nav {
-  float: right;
-  margin-top: 20px;
-}
-h1 .highlight {
-  background-color: #4aaaa5;
-  padding:30px 30px 30px 30px; 
-}
+
 header a:hover {
-  color: #4aaaa5;
+  color: #B8A7AE;
 }
 
 /* FOOTER SECTION */
@@ -63,128 +76,149 @@ footer {
   padding: 20px;
   font-size: 10px;
   color: #777777;
-  background-color: #666666;
-  border-top: 5px solid #4aaaa5;
+  background-color: #eee;
+  border-top: 5px solid #B8A7AE;
   text-align: center;
   position: fixed;
   bottom:0;
   width: 100%;
 }
 
-                            /* CONNECT SECTION */
+                            /* MAIN SECTION & CONNECT SECTION */
 
-                            
-#connect h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: #4aaaa5;
+.main {
+  width: 960px;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 60px;
+}
+  section {
+  background-color: #eee;
+  border: #cccccc;
+  max-width: 650px;
+  padding: 20px;
+
 }
 
- #connect p {
-  clear: both;
-  display: inline;
-  text-align: justify;
-  font-size: 14.5px;
+aside {
+  background-color: #eee;
+  border: #cccccc;
+  margin: auto 0;
+  max-width: 270px;
 }
 
 #connect {
-  height: 100%;
-  max-width: 270px;
-  border: 1px solid #ccc;
-}
-
-#connect{
   float: right;
-  width: 100%;
-  padding: 10px;
+  padding: 20px;
 }
 
-aside #connect a {
-  color: #777777;
-  text-decoration: none;
+#connect h2 {
+  margin-bottom: 10px;
+  color: #B8A7AE;
+  text-align: center;
+  font-weight: bold;
 }
-aside #connect ul {
-  margin: 0;
-  padding: 0;
+
+.sm-hub {
+  width: 100%;
+  text-align: center;
 }
-aside #connect li {
+
+.sm-hub li {
   float: left;
   display: inline;
-  padding: 0 20px 0 20px;
+  margin: auto;
 }
+
+.sm-icon a {
+  text-decoration: none;
+  margin: auto;
+  display: block;
+}
+
+#icon {
+  border: none;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  padding: 5px 10px 5px 10px;
+}
+
+
+
+
+
+
               
             /*~~~ END !!!! Global-ish Elements ~~~ */
 
 
-                    /* PORTFOLIO SECTION */
+                      /* CONTACT.HTML SECTION */
 
-#portfolio {
+
+
+ #contact {
   height: 100%;
   max-width: 650px;
-  border: 1px solid #ccc;
 }
-
-#portfolio{
+ #contact{
   float: left;
   width: 100%;
   padding: 10px;
 }
 
-#portfolio p {
+ #contact p {
   clear: both;
   display: inline;
   text-align: justify;
-  font-size: 14.5px;
+  padding: 20px;
 }
-#portfolio h2 {
+ #contact h2 {
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #4aaaa5;
+  color: #B8A7AE;
+  font-weight: bold;
+  padding: 10px 0px 0px 10px;
 }
 
-
-
-                      /* CONTACT SECTION */
-
-
-
-#contact {
-  height: 100%;
-  max-width: 650px;
-  border: 1px solid #ccc;
-}
-#contact{
-  float: left;
-  width: 100%;
-  padding: 10px;
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  
 }
 
-#contact p {
-  clear: both;
-  display: inline;
-  text-align: justify;
-  font-size: 14.5px;
-}
-#contact h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: #4aaaa5;
+input[type=submit] {
+    background-color: #B8A7AE;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-                        /* ABOUT SECTION */
-
-
-#container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-  margin-top: 30px;
+input[type=submit]:hover {
+    background-color: #B8A7AE;
 }
+
+.contform {
+    background-color: #eee;
+    max-width: 650px;
+}
+
+                        /* ABOUT or INDEX.HTML SECTION */
+
+
+
 
 #about {
   height: 100%;
   max-width: 650px;
-  border: 1px solid #ccc;
 }
 #about{
   float: left;
@@ -195,17 +229,129 @@ aside #connect li {
   float: left;
   width: 200px;
   height: 200px;
-  margin: 2px 15px 0px 0px;
+  margin: auto;
+  padding:20px;
 }
 #about p {
   clear: both;
   display: inline;
   text-align: justify;
-  font-size: 14.5px;
+  line-height:1.5px;
+  letter-spacing: .008em;
+  font-size: 1em;
+  margin: auto;
+  padding:auto;
 }
 #about h2 {
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #4aaaa5;
+  color: #B8A7AE;
+  font-weight: bold;
+  padding: 10px 0px 0px 10px;
 }
+
+
+
+                   /* PORTFOLIO.HTML SECTION */
+#portfolio {
+  height: 100%;
+  max-width: 650px;
+  overflow: auto;
+}
+#portfolio{
+  float: left;
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+#portfolio h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #B8A7AE;
+  padding: 10px 0px 0px 10px;
+  font-weight: bold;
+}
+
+.one {
+  height: 175px;
+  width: 225px;
+  clear:both;
+  float: left;
+ }
+
+.two {
+  height: 175px;
+  width: 225px;
+  float:left;
+  display: inline;
+  }
+
+.three {
+  height: 175px;
+  width: 225px;
+  display: inline;
+  float: left;
+ }
+
+.four {
+  height: 175px;
+  width: 225px;
+  display: inline;
+  float: left;
+     }
+
+.five {
+  height: 175px;
+  width: 225px;
+  display: inline;
+  clear:both;
+  float:left;
+  }
+
+.box:hover .image {
+  opacity: 0.3;
+}
+
+.clearfix:after {
+content: "";
+display: block;
+clear: both;
+}
+
+
+div.box {
+  max-width: 225px;
+  max-height: 200px;
+  position: relative;
+  margin: 20px 20px 0px 60px;
+  border: .5px solid black;
+}
+
+
+/*description box hovering over image*/
+
+div.desc {
+  background: #B8A7AE;
+  color: #eee;
+  position: absolute;
+  bottom: 20px;
+  left:0px;
+  right:0px;
+  text-align: center;
+  padding: 15px;
+}
+
+.desc p {
+font-family: georgia, times, 'times new roman', serif;
+font-size: 1em;
+}
+
+.wrap {
+width: 95%;
+background-color: #eee;
+}
+
+
+
+
 

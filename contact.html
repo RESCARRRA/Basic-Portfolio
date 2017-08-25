@@ -2,12 +2,12 @@
 <html>
 <head>
   <title>Basic Portfolio | Contact</title>
-    <meta charset="utf-8">
-    <meta content="width=device-width" name="viewport">
-    <meta content="Ryn Escarra-Cypher" name="author">
-    <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta content="width=device-width" name="viewport">
+  <meta content="Ryn Escarra-Cypher" name="author">
+  <link href="./assets/css/reset.css" rel="stylesheet" type="text/css">
+  <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
   <header>
     <div class="container">
@@ -29,28 +29,37 @@
       </nav>
     </div>
   </header>
-  </div>
-
-  <div id="container">
-    <article id="contact">
-
-        <h2>Contact</h2><hr>
-       
-        <form>
-          
-
+  <div class="main">
+    <section id="contact">
+      <h2> Contact</h2>
+      <hr>
+      <div class="contform">
+        <form action="mailto:ryn.b.escarra@gmail.com" method="post" enctype="text/plain"> 
+          <label for="name">Name</label> <input id="name" name="name" placeholder="John Smith" type="text"> <label for="email">Email</label> <input id="email" name="email" placeholder="example@gmail.com" type="email"> <label for="message">Message</label> 
+          <textarea id="message" name="message" placeholder="" style="height:200px"></textarea> <input type="submit" value="Submit">
         </form>
-
-      </article>
-
+      </div>
+    </section>
     <aside id="connect">
-      <h2>Connect with Me</h2><hr>
-      <p><ul><li>github</li>
-      <li>linked</li>
-      <li>stack</li></ul></p>
-
+      <h2>Connect with Me</h2>
+      <hr>
+      <div class="sm-hub">
+        <ul>
+          <li>
+            <a class="sm-icon" href="https://github.com/rescarra/" target="_blank"><img alt="github icon" id="icon" src="./assets/images/github.png"></a>
+          </li>
+          <li>
+            <a class="sm-icon" href="https://www.linkedin.com/in/rescarra/" target="_blank"><img alt="linkedin icon" id="icon" src="./assets/images/linkedin.png"></a>
+          </li>
+          <li>
+            <a class="sm-icon" href="https://stackoverflow.com/users/8419345/rescarra/" target="_blank"><img alt="stackoverflow icon" id="icon" src="./assets/images/stackoverflow.png"></a>
+          </li>
+        </ul>
+      </div>
     </aside>
   </div>
-<footer>Copyright: Ryn Escarra-Cypher 2017</footer>
+  <footer>
+    Copyright: Ryn Escarra-Cypher 2017
+  </footer>
 </body>
 </html>

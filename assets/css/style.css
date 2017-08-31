@@ -1,289 +1,200 @@
-/*To style basic-portfolio with spec delineated in homework assignment, 
-change the following css code:
 
-1. Remove border-radius:25px to remove round borders.
-2. Change font for headings to:; Georgia, Times, 'Times New Roman' Serif;
-4. Change color used for headings and backgrounds from '#DAF7A6' or #94BEC2' to `#4AAAA5` (<< teal listed in HW instructions)
-5. Change font color (for all text except the headings) to `#777777`
-6. Change main header background color to `#ffffff` and main header border color to `#cccccc`
-7. Change footer background color to `#666666`
-8. Change main content background color to `#ffffff` and main content border color to `#dddddd`
-*/
-
-html body {
-margin : auto 0;
-padding : 0;
-height : auto;
-background-color : #eee;
-background-image : url('../images/topography.png');
-font-family : arial, 'helvetica neue', helvetica, sans-serif;
-text-align : justify;
-color : #777777;
-overflow : auto;
-}
-h1 {
-font-family : 'helvetica neue', Times, 'Times New Roman', Serif;
-font-size : 2.1em;
-font-weight : bold;
-}
-h2, h3 {
-font-family : 'helvetica neue', Times, 'Times New Roman', Serif;
-font-size : 1.4em;
+body {
+  margin: auto;
+  overflow: scroll;
+  background-image : url('../images/whirlpool.png');
+  width: 100%;
+  font-family: arial, helvetica, "helvetica neue", serif;
+  color: #777777;
 }
 
-/* HEADER - LOGO - NAV */
-
-.container {
-width : 960px;
-margin : auto;
-overflow : auto;
-}
 header {
-background-color : #ffffff;
-color : #ffffff;
-border: #cccccc;
+background-color: white;
 }
-#logo h1 {
-float : left;
-margin : auto;
-padding-top : 15px;
-padding-bottom : 20px;
+
+.header {    
+	background-color: white;
+    margin: auto;
+    display: inline;
+    width: 80%;
 }
-h1 .highlight {
-background-color : #94BEC2;
-padding : 30px 30px 30px 30px;
-border-radius :25px;
-border : #94BEC2 solid 1px;
-padding : 20px;
+
+h1 {
+    background-color: #4aaaa5;
+    color: white;
+    font-family: Georgia, Times, 'Times New Roman', sans-serif;
+    display: inline;
+    float: left;
+    padding: 20px;
+    margin: auto;
+    }
+h2 {
+color: #4aaaa5;
+font-family: Georgia, Times, 'Times New Roman', sans-serif;}
+
+
+.nav ul{
+    list-style-type: none;
+    margin: auto;
 }
-header nav {
-float : right;
-margin-top : 30px;
+
+.nav li a {
+    padding: 29px 19px 29px 19px;
+    background-color: #ffffff;
+    display: inline-block;
+    float: right;
 }
-header ul {
-margin : 0;
-padding : 0;
-}
-header li {
-float : left;
-display : inline;
-padding : 0 20px 0 20px;
-}
-header a {
+.nav a {
 color : #777777;
 text-decoration : none;
 }
-header a:hover {
-color : #DAF7A6;
+.nav a:hover {
+color : #4aaaa5;
+}
+ 
+.wrapper {
+width: 960px;
+height: 100%;
+overflow: hidden;
+margin: auto;
+border: 1px;
 }
 
-/* FOOTER */
+.main-content {
+width:630px;
+background-color: #fff;
+display:inline;
+float: left;
+margin: 40px auto;
+border: 10px solid #fff;
+border-radius: 5px;
+text-align: justify;
+}
+
+#headshot {
+display: inline;
+float: left;
+padding: 10px;
+width: 180px;
+}
+
+.bio p{
+color: #777777;
+font-family: arial, Helvetica,'Helvetica Neue', serif;
+padding: 10px;
+display: inline;
+float: left;
+}
+
+.sidebar {
+width: 250px;
+background-color: #fff;
+display: inline;
+float: right;
+margin: 40px auto;
+border: 10px solid #fff;
+border-radius: 5px;
+}
+
+.sidebar .sm-icon {
+    margin: auto;
+}
+
+a.icon, img.icon {
+    display: inline-block;
+    float: left;
+    margin: auto;
+}
+
+img.icon {
+	max-width : 50px;
+	max-height : 50px;
+	padding: 10px;
+}
 
 footer {
 padding : 20px;
 font-size : 10px;
-color : #777777;
-background-color : #ffffff;
-border-top : 5px solid #94BEC2;
+color : #dddddd;
+background-color : #666666;
+border-top : 5px solid #4aaaa5;
+text-align : center;
+position : relative;
+bottom : 0px;
+width : 100%;
+}
+
+#sticky {
+padding: 20px;
+font-size : 10px;
+color : #dddddd;
+background-color : #666666;
+border-top : 5px solid #4aaaa5;
 text-align : center;
 position : fixed;
-bottom : 0;
+bottom : 0px;
 width : 100%;
 }
 
-/* MAIN BOX (content; 650px wide)*/
 
-.main {
-width : 960px;
-height : 100%;
-margin : 60px auto;
-overflow : auto;
-}
-section {
-background-color : #ffffff;
-border : #cccccc;
-max-width : 650px;
-padding : 30px;
-border-radius : 25px;
-}
 
-/* CONNECT SIDEBAR (aside; 270px wide) */
+/* CONTACT FORM */
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    }
 
-aside {
-background-color : #ffffff;
-border : #cccccc;
-margin : auto 0;
-max-width : 270px;
-border-radius : 25px;
-padding : 20px;
-}
-#connect {
-float : right;
-padding : 20px;
-}
-#connect h2 {
-margin-bottom : 10px;
-color : #94BEC2;
-text-align : center;
-font-weight : bold;
-}
-.sm-hub {
-width : 100%;
-text-align : center;
-}
-.sm-hub li {
-float : left;
-display : inline;
-margin : auto;
-}
-.sm-icon a {
-text-decoration : none;
-margin : auto;
-display : block;
-}
-.icon {
-border : none;
-width : 50px;
-height : 50px;
-margin : auto;
-padding : 5px 10px 5px 10px;
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-/* CONTACT (contact.html) */
-
-#contact {
-height : 100%;
-max-width : 650px;
-}
-#contact {
-float : left;
-width : 100%;
-padding : 10px;
-}
-#contact h2 {
-margin-top : 10px;
-color : #94BEC2;
-font-weight : bold;
-padding : 10px 0 5px 15px;
-}
-#contact label {
-margin-top : 20px;
-color : #777;
-padding : 20px 0 0 20px;
-font-size : 0.9em;
-font-weight : bold;
-}
-input[type="text"], input[type="email"], select, textarea {
-width : 93%;
-padding : 12px;
-display: block;
-border : #ccc solid 1px;
-border-radius : 4px;
-box-sizing : border-box;
-margin : 10px 20px 10px 20px;
-}
-input[type="submit"] {
-background-color : #94BEC2;
-color : #eee;
-padding : 12px 20px;
-border : none;
-border-radius : 4px;
-cursor : pointer;
-margin : 10px;
-}
-input[type="submit"]:hover {
-background-color : #DAF7A6;
-}
-.contform {
-background-color : #ffffff;
-max-width : 650px;
+input[type=submit]:hover {
+    background-color: #5cccc4;
 }
 
-/* HOME (index.html) */
-
-#about {
-height : 100%;
-max-width : 650px;
-}
-#about {
-float : left;
-width : 100%;
-padding : 10px;
-}
-#headshot {
-float : left;
-width : 200px;
-height : 200px;
-margin : 5px auto;
-padding : 10px;
-}
-#about p {
-clear : both;
-display : inline;
-text-align : justify;
-line-height : 0.15em;
-letter-spacing : 0.008em;
-font-size : 0.96em;
-margin : auto;
-}
-#about h2 {
-margin-top : 10px;
-margin-bottom : 10px;
-color : #94BEC2;
-font-weight : bold;
-padding : 10px 0 0 10px;
+.contact-form {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
 }
 
-/* PORTFOLIO (portfolio.html) */
 
-#portfolio {
-height : 100%;
-max-width : 650px;
-overflow : inherit;
-}
-#portfolio {
-float : left;
-width : 100%;
-margin : 5px;
-padding : 5px;
-}
-#portfolio h2 {
-margin-top : 10px;
-margin-bottom : 10px;
-color : #94BEC2;
-font-weight : bold;
-padding : 10px 0 0 20px;
-}
+/*PORTFOLIO GRID */
+
 .one {
 height : 175px;
 width : 225px;
 clear : both;
 float : left;
 }
-.two {
+.two, .three, .four {
 height : 175px;
 width : 225px;
 float : left;
 display : inline;
 }
-.three {
-height : 175px;
-width : 225px;
-display : inline;
-float : left;
-}
-.four {
-height : 175px;
-width : 225px;
-display : inline;
-float : left;
-}
+
 .five {
 height : 175px;
 width : 225px;
 display : inline;
 clear : both;
 float : left;
+}
+
+
+.image {
+  border-radius: 5px;
 }
 .box:hover .image {
 opacity : 0.300000011920928955078125;
@@ -298,32 +209,116 @@ max-width : 225px;
 max-height : 200px;
 position : relative;
 margin : 20px 20px 0 60px;
+border-radius: 5px;
 }
-.image {
-border-radius :25px;
-}
+
 .desc {
-background : #94BEC2;
+background : #4aaaa5;
 color : #ffffff;
 position : absolute;
 bottom : 20px;
 left : 0;
 right : 0;
 text-align : center;
-padding : 15px;
-border-radius :10px; 
+padding : 5px;
 font-weight: bold;
+border-radius: 5px;
 }
 .desc p {
 font-size : 1em;
-}
-.wrap {
-width : 95%;
-background-color : #ffffff;
+font-family: georgia, times, 'times new roman', sans-serif;
 }
 
 
 
 
+/* Media Queries */
 
 
+/* Small devices (landscape / phones)*/
+@media screen and (max-width: 640px), screen and (orientation: landscape){
+  header {
+    position: static;
+  } 
+}
+@media screen and (max-width: 640px) {
+
+div.wrapper {
+  width: 100%;
+  margin: auto 0px;
+  overflow: auto;
+}
+.header h1 {
+  width: 100%;
+  margin: auto 0px;
+  text-align: center;
+
+}
+.header ul {
+  width: 75%;
+  text-align: center;
+}
+.header li { 
+  float: none;
+  padding: 0px 5px 0px 5px ; 
+  display: block;
+  }
+
+div.main-content{  
+  width: 100%;
+  margin: auto 0px;
+}
+.bio {
+  clear: both;
+  width: 90%;
+  margin: auto;
+  padding: 5px;
+}
+#headshot {
+  clear: both;
+  width: 90%;
+  margin: auto;
+  padding: 5px;
+}
+div.sidebar {
+  clear: both;
+  width: 100%;
+  margin: auto 0px;
+  clear: both;
+  display: block;
+  float:left;
+}
+}
+
+/* Medium devices (tablets)*/
+@media screen and (max-width: 768px) { 
+  div.wrapper {
+    width: 90%;
+    margin: auto;
+  }
+  div.main-content{  
+    width: 90%;
+    margin: 10px;
+
+  }
+  div.sidebar {
+    width: 90%;
+    margin: 10px;
+    clear: both;
+    display: block;
+    float:left;
+  }
+
+  .header ul li {
+      display: inline-block;
+      margin: auto 0px;
+    }
+}
+/* Large devices (desktops, laptop screens)*/
+
+@media screen and (max-width: 980px) { 
+div.wrapper {
+  width: 100%;
+  margin: 10px auto;
+  }
+}
